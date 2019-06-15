@@ -7,8 +7,8 @@ title: 非典型性程序员
 subtitle: 
 description: 
 keywords: 非典型性程序员, 博客, 前端, Vue, Flutter, Node.js
-author: caoruiy
-language: 
+author: 曹一山
+language: zh-Hans
 timezone:
 
 # URL
@@ -73,9 +73,34 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: nextTheme
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# RSS
+## 插件: https://github.com/hexojs/hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: 
+  content_limit: 140
+  content_limit_delim: '<'
+  order_by: -date
+  icon: icon.png
+
+# 标签聚合
+tag_generator:
+  per_page: 10
+  tag_generator: true # 在tags.html 生成所有标签
+
+# 站内搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 100
