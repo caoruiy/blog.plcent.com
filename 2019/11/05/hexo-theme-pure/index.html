@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000">
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top">
+  
+  
+  <title>Hexo主题pure使用指南 | 非典型性程序员</title>
+  <meta name="description" content="hexo 主题 pure 项目相关信息:  预览地址: https://blog.cofess.com项目地址: https://github.com/cofess/hexo-theme-pure中文使用文档: https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md  使用前请操作使用该主题前, 请先复制 theme/p">
+<meta name="keywords" content="hexo主题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo主题pure使用指南">
+<meta property="og:url" content="https://blog.plcent.com/2019/11/05/hexo-theme-pure/index.html">
+<meta property="og:site_name" content="非典型性程序员">
+<meta property="og:description" content="hexo 主题 pure 项目相关信息:  预览地址: https://blog.cofess.com项目地址: https://github.com/cofess/hexo-theme-pure中文使用文档: https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md  使用前请操作使用该主题前, 请先复制 theme/p">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-06T10:16:31.201Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo主题pure使用指南">
+<meta name="twitter:description" content="hexo 主题 pure 项目相关信息:  预览地址: https://blog.cofess.com项目地址: https://github.com/cofess/hexo-theme-pure中文使用文档: https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md  使用前请操作使用该主题前, 请先复制 theme/p">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://blog.plcent.com/2019/11/05/hexo-theme-pure/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="非典型性程序员" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  
+</head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/caoruiy" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpeg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">曹一山</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> 苏州, 中国</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">友链</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/caoruiy" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/NollyUp" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>个人站正式上线, 不断优化改进中!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo主题/">hexo主题</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/hexo/" style="font-size: 13px;">hexo</a> <a href="/tags/hexo主题/" style="font-size: 13px;">hexo主题</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/hexo/">hexo</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/11/05/hexo-theme-pure/" class="title">Hexo主题pure使用指南</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-11-05T06:34:15.000Z" itemprop="datePublished">2019-11-05</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/hexo/">hexo</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/11/04/hello-hexo/" class="title">hexo搭建个人博客并部署到个人服务器</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-11-04T06:28:02.000Z" itemprop="datePublished">2019-11-04</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用前请操作"><span class="toc-number">1.</span> <span class="toc-text">使用前请操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文章目录索引"><span class="toc-number">2.</span> <span class="toc-text">文章目录索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#侧边栏"><span class="toc-number">3.</span> <span class="toc-text">侧边栏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图集"><span class="toc-number">4.</span> <span class="toc-text">图集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#展示github项目"><span class="toc-number">5.</span> <span class="toc-text">展示github项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#评论功能"><span class="toc-number">6.</span> <span class="toc-text">评论功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Valine"><span class="toc-number">6.1.</span> <span class="toc-text">Valine</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Valine配置项"><span class="toc-number">6.1.1.</span> <span class="toc-text">Valine配置项</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搜索功能"><span class="toc-number">7.</span> <span class="toc-text">搜索功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#内置搜索"><span class="toc-number">7.1.</span> <span class="toc-text">内置搜索</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文章阅读数量统计"><span class="toc-number">8.</span> <span class="toc-text">文章阅读数量统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字数统计-amp-阅读时长"><span class="toc-number">9.</span> <span class="toc-text">字数统计&amp;阅读时长</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#友情链接"><span class="toc-number">10.</span> <span class="toc-text">友情链接</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-hexo-theme-pure" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo主题pure使用指南
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2019/11/05/hexo-theme-pure/" class="article-date">
+	  <time datetime="2019-11-05T06:34:15.000Z" itemprop="datePublished">2019-11-05</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/hexo主题/">hexo主题</a>
+  </span>
+
+
+        
+
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2019/11/05/hexo-theme-pure/" class="leancloud_visitors"  data-flag-title="Hexo主题pure使用指南">
+			<span class="leancloud-visitors-count">0</span>
+		</span>
+    </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/11/05/hexo-theme-pure/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1.5k(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5(分)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p><code>hexo</code> 主题 <code>pure</code> 项目相关信息:</p>
+<blockquote>
+<p>预览地址: <a href="https://blog.cofess.com" target="_blank" rel="noopener">https://blog.cofess.com</a><br>项目地址: <a href="https://github.com/cofess/hexo-theme-pure" target="_blank" rel="noopener">https://github.com/cofess/hexo-theme-pure</a><br>中文使用文档: <a href="https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md" target="_blank" rel="noopener">https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md</a></p>
+</blockquote>
+<h3 id="使用前请操作"><a href="#使用前请操作" class="headerlink" title="使用前请操作"></a>使用前请操作</h3><p>使用该主题前, 请先复制 <code>theme/pure/_source/</code> 目录下的所有内容到 <code>blog path/source/</code> 目录下<br>原因在于该目录下有建好的菜单 <code>categories</code>(分类)、<code>tags</code>(标签)、<code>repository</code>(项目)、<code>books</code>(书单)、<code>links</code>(友链)、<code>about</code>(关于)页面</p>
+<p>当你使用自动生成分类、标签，展示github项目时</p>
+<h3 id="文章目录索引"><a href="#文章目录索引" class="headerlink" title="文章目录索引"></a>文章目录索引</h3><p>在文章详情页, 展示一个文章目录</p>
+<ol>
+<li><p>主题配置文件中开启配置:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">config</span><br><span class="line">  toc: true # 是否开启文章章节目录导航</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在文章顶部将该文章开启索引, 如:</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo主题pure使用指南</span><br><span class="line">date: 2019-11-05 14:34:15</span><br><span class="line">tags: </span><br><span class="line">- hexo主题</span><br><span class="line"></span><br><span class="line">categories:</span><br><span class="line">- hexo</span><br><span class="line"></span><br><span class="line">toc: true # 是否启用内容索引</span><br><span class="line">sidebar: none # 是否启用sidebar侧边栏，none：不启用</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="侧边栏"><a href="#侧边栏" class="headerlink" title="侧边栏"></a>侧边栏</h3><p>主题配置项中, 侧边栏可以如下配置:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 侧边栏</span><br><span class="line">sidebar: right</span><br><span class="line"># 侧边栏启用哪些模块</span><br><span class="line">widgets:</span><br><span class="line">  - board # 公告</span><br><span class="line">  - category # 分类</span><br><span class="line">  - tag # 标签</span><br><span class="line">  - tagcloud # 标签云</span><br><span class="line">  - archive # 归档</span><br><span class="line">  - recent_posts # 最近文章</span><br><span class="line"></span><br><span class="line"># 归档列表的展示方式</span><br><span class="line">archive_type: &apos;monthly&apos; # 归档方式:  yearly | monthly</span><br><span class="line">show_count: true # 显示每个归档的文章总数</span><br></pre></td></tr></table></figure>
+
+<h3 id="图集"><a href="#图集" class="headerlink" title="图集"></a>图集</h3><p>在文章详情页中, 涉及的图片可以使用图集功能, 在点击一张图片时, 放大图片.<br>主题的图册公告是使用<a href="https://github.com/fancyapps/fancybox" target="_blank" rel="noopener">fancybox</a>实现, 可以参照github</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Fancybox</span><br><span class="line"># 图集功能</span><br><span class="line">fancybox: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="展示github项目"><a href="#展示github项目" class="headerlink" title="展示github项目"></a>展示github项目</h3><p>在左侧菜单<code>项目</code>中, 点击展示自己的github项目</p>
+<ol>
+<li>在主题配置文件中 <code>_config.yml</code> 修改, 请配置自己github用户名</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">github: </span><br><span class="line">  username: caoruiy  # github用户名</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>新建<code>repository</code>页面:</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo new repository</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>你也可以直接复制 <code>theme/pure/_source/</code> 目录下 <code>repository文件夹</code> 到 <code>博客根目录/source/</code> 目录下</p>
+</blockquote>
+<ol start="3">
+<li>将文件内容修改为:</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Repositories</span><br><span class="line">layout: repository</span><br><span class="line">comments: false</span><br><span class="line">sidebar: none</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>关键内容为 <code>layout: repository</code>, 包含该属性才可以展示github项目</p>
+</blockquote>
+<h3 id="评论功能"><a href="#评论功能" class="headerlink" title="评论功能"></a>评论功能</h3><p>主题集成了<a href="https://disqus.com/" target="_blank" rel="noopener">disqus</a>、<a href="http://www.uyan.cc/" target="_blank" rel="noopener">友言</a>、<a href="https://livere.com/" target="_blank" rel="noopener">来必力</a>、<a href="https://github.com/imsun/gitment" target="_blank" rel="noopener">gitment</a>、<a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">gitalk</a>评论系统，选择其中一种即可</p>
+<p>你可以在主题配置文件中修改评论工具</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">comment:</span><br><span class="line">  type: valine  # 启用哪种评论系统</span><br></pre></td></tr></table></figure>
+
+<h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h4><p>一个无后端的评论框工具, 其依赖于 <a href="https://leancloud.cn" target="_blank" rel="noopener">Leancloud</a> 开发, 所以使用前需要先注册 <a href="https://leancloud.cn" target="_blank" rel="noopener">Leancloud</a> 账号</p>
+<p>如何开始? 你可以从 <a href="https://valine.js.org/quickstart.html" target="_blank" rel="noopener">Valine-快速开始</a> 教程开始, 教程包含了一步一步的指引教程.</p>
+<h5 id="Valine配置项"><a href="#Valine配置项" class="headerlink" title="Valine配置项"></a>Valine配置项</h5><p>主题valine评论框提供了以下配置项</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">valine: # Valine官方地址: https://valine.js.org</span><br><span class="line">  appid:  # 你的 leancloud 应用 appid</span><br><span class="line">  appkey:  # 你的 leancloud 应用 appkey</span><br><span class="line">  notify: true # 是否开始评论邮件提醒, 教程: https://github.com/xCss/Valine/wiki</span><br><span class="line">  verify: false # 是否开始验证码功能, 开始邮件提醒会自动开启验证码功能</span><br><span class="line">  placeholder: 说点什么... # 输入框默认内容</span><br><span class="line">  avatar: mm # 头像展示方式, 具体设置项教程: https://valine.js.org/configuration.html#avatar</span><br><span class="line">  meta: nick,mail,link # 自定义评论信息</span><br><span class="line">  pageSize: 10 # 评论列表分页</span><br><span class="line">  lang: zh-cn, # 多语言支持 zh-cn | en</span><br><span class="line">  visitor: true # 文章阅读量统计:  https://valine.js.org/visitor.html</span><br><span class="line">  highlight: true # 代码高亮</span><br><span class="line">  recordIP: true # 记录评论者的IP</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>关于邮件提醒: 只有在回复评论时, 并且填写了邮箱的评论才会收到回复提醒<br>关于文章阅读量统计: 开启阅读量统计, 会在详情页标题下展示阅读量数据</p>
+</blockquote>
+<h3 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h3><p>主题提供内置的<code>搜索功能</code>和<code>百度搜索</code>, <code>百度搜索</code>就是使用百度的SEO搜索, 个人觉得不是很实用, 不建议开启.</p>
+<p>在主题配置文件 <code>_config.yml</code> 中配置:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Search</span><br><span class="line">search:</span><br><span class="line">  insight: true # 在使用搜索功能前, 你需要安装 `hexo-generator-json-content`</span><br><span class="line">  baidu: false # 使用百度搜索前, 你必须禁用其他所有的搜索功能</span><br></pre></td></tr></table></figure>
+
+<h4 id="内置搜索"><a href="#内置搜索" class="headerlink" title="内置搜索"></a>内置搜索</h4><p>使用搜索功能前需要先安装:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -S hexo-generator-json-content</span><br></pre></td></tr></table></figure>
+
+<p>项目地址: <a href="https://github.com/alexbruno/hexo-generator-json-content" target="_blank" rel="noopener">https://github.com/alexbruno/hexo-generator-json-content</a></p>
+<p>在你运行 <code>hexo g</code> 或者 <code>hexo s</code> 时生效，在 <code>hexo g</code> 生成站点时, 会在根目录下生成 <code>content.json</code> 该文件内容即为搜索内容。</p>
+<p>你可以对搜索内容进行自定义的配置， 只要在 <code>_config.yml</code> 中配置 <a href="https://github.com/alexbruno/hexo-generator-json-content#defaults" target="_blank" rel="noopener"><code>jsonContent</code></a>即可:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"># 示例: 隐藏分类和标签的搜索</span><br><span class="line">jsonContent:</span><br><span class="line">  dateFormat: DD/MM/YYYY</span><br><span class="line">  posts:</span><br><span class="line">    title: true</span><br><span class="line">    date: true</span><br><span class="line">    path: true</span><br><span class="line">    text: true</span><br><span class="line">    raw: false</span><br><span class="line">    content: false</span><br><span class="line">    slug: false</span><br><span class="line">    updated: false</span><br><span class="line">    comments: false</span><br><span class="line">    link: false</span><br><span class="line">    permalink: false</span><br><span class="line">    excerpt: false</span><br><span class="line">    categories: false</span><br><span class="line">    tags: false</span><br><span class="line">    author: false</span><br></pre></td></tr></table></figure>
+
+<h3 id="文章阅读数量统计"><a href="#文章阅读数量统计" class="headerlink" title="文章阅读数量统计"></a>文章阅读数量统计</h3><p>主题提供 <a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子</a> 和 基于 leancloud 的统计</p>
+<p>但是经过验证, 发现基于leancloud的统计不生效, 不知原因, 实现等效的方法就是: </p>
+<p>评论框使用<code>valine</code>评论框(主题已经内置), 同时开启 <code>visitor: true</code> 配置项项即可</p>
+<h3 id="字数统计-amp-阅读时长"><a href="#字数统计-amp-阅读时长" class="headerlink" title="字数统计&amp;阅读时长"></a>字数统计&amp;阅读时长</h3><p>主题内置了该功能, 使用前需要先安装插件:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -S hexo-wordcount</span><br></pre></td></tr></table></figure>
+
+<p>主题配置文件中, 开启设置即可:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># wordcount</span><br><span class="line">postCount:</span><br><span class="line">  enable: true</span><br><span class="line">  wordcount: true  # 文章字数统计</span><br><span class="line">  min2read: true  # 阅读时长预计</span><br></pre></td></tr></table></figure>
+
+<h3 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h3><p>复制 <code>theme/pure/_source/</code> 目录下 <code>links文件夹</code> 到 <code>blog path/source/</code> 目录下<br>在 hexo 目录下的 source 文件夹内创建一个名为 _data（禁止改名）的文件夹。</p>
+<p>然后在文件内创建一个名为 <code>links.yml</code> 的文件,在其中添加相关数据即可。</p>
+<p>单个友情链接的格式为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name:</span><br><span class="line">    link: http://example.com</span><br><span class="line">    avatar: http://example.com/avatar.png</span><br><span class="line">    desc: &quot;这是一个描述&quot;</span><br></pre></td></tr></table></figure>
+
+<p>添加多个友情链接，我们只需要根据上面的格式重复填写即可。</p>
+<ul>
+<li><p>将 Name 改为友情链接的名字，例如 Cofess。</p>
+</li>
+<li><p><a href="http://example.com" target="_blank" rel="noopener">http://example.com</a> 为友情链接的地址。</p>
+</li>
+<li><p><a href="http://example.com/avatar.png" target="_blank" rel="noopener">http://example.com/avatar.png</a> 为友情链接的头像。</p>
+</li>
+<li><p>这是一个描述 为友情链接描述。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://blog.plcent.com/2019/11/05/hexo-theme-pure/" title="Hexo主题pure使用指南" target="_blank" rel="external">https://blog.plcent.com/2019/11/05/hexo-theme-pure/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/caoruiy" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpeg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/caoruiy" target="_blank"><span class="text-dark">曹一山</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
+        <div>一个Web开发者, 热爱生活, 崇尚技术。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2019/11/04/hello-hexo/" title="hexo搭建个人博客并部署到个人服务器"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">
+        <span>[&nbsp;</span><span>文章目录</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/caoruiy" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/NollyUp" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        &copy; 2019 曹一山
+        
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: true,
+    appId: 'dR1qyrvU6qgrRgNGXJRybXuc-gzGzoHsz',
+    appKey: '5tjvd45ScSphfpjfPI1pNqFJ',
+    placeholder: '说点什么...',
+    avatar: 'monsterid',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: true
+  });
+  </script>
+
+     
+
+
+
+
+
+
+
+</body>
+</html>
