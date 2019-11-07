@@ -1,7 +1,7 @@
 ---
-title: 标签索引
-date: 2019-06-15 22:48:30
-type: tags
+title: 标签
+date: 2019-11-06 15:55:13
+type: "tags"
+layout: tags
 comments: false
 ---
-> 标签列表

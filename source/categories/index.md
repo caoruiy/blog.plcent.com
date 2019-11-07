@@ -1,5 +1,7 @@
 ---
-title: 文章分类
-date: 2019-06-15 22:52:21
-type: categories
+title: 分类
+date: 2019-11-06 15:55:00
+type: "categories"
+layout: categories
+comments: false
 ---
