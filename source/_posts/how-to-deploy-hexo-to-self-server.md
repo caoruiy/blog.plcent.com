@@ -133,12 +133,15 @@ deploy:
 
 安装完成之后, 使用 `hexo d` 推送试试, 推送成功将显示:
 
-![推送成功](1573175297499.png)
+![推送成功](./how-to-deploy-hexo-to-self-server/1573175297499.png)
 
 
 查看上面的截图你会发现这里是使用用户名密码的方式推送仓库, 为了更方便使用可以配置使用ssh登录
 
 #### 配置ssh
+
+[设置 SSH Key 登录服务器和 Git 服务器](https://www.cnblogs.com/feiffy/p/8995003.html)
+
 
 
 

@@ -83,3 +83,38 @@ feed:
   hub:
   content:
 ```
+
+## hexo 博客图片问题
+hexo博客图片的问题在于，markdown文章使用的图片路径和hexo博客发布时的图片路径不一致。
+通常我们使用markdown书写博客时, 采用的方式是使用 `![]()` 格式插入图片，我们希望在生成博客时，可以将图片转换成正确的格式。
+
+这里可以利用插件 `hexo-asset-image` 来解决这个问题。
+
+1. 安装:
+
+```
+> npm i -S hexo-asset-image
+```
+
+2. 配置:
+
+只需要在`_config.yml` 中配置 `post_asset_folder` 为 `true` 即可。
+
+3. 问题:
+
+> 但是从插件存在问题[域名是xxx.io的情况下，图片路径会从原本/xxx.jpg变成 /.io/xxx.jpg](https://github.com/xcodebuild/hexo-asset-image/issues/47)， 如果你也存在一样的问题，可以手动修改代码解决这个问题。
+
+在`node_modules` 目录下, 找到 `hexo-asset-image` 文件夹, 修改文件 `index.js` 的 `L24`
+
+```
+# 从
+var endPos = link.lastIndexOf('.');
+# 修改为
+var endPos = link.length-1; 
+```
+
+> 参见 [github issues](https://github.com/xcodebuild/hexo-asset-image/issues/47#issuecomment-512759505)
+> 作者更新了项目代码, 但是没有更新 npm 包。
+
+## 参考目录
+- [hexo博客图片问题](https://www.jianshu.com/p/950f8f13a36c)

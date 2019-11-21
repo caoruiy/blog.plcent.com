@@ -76,7 +76,7 @@ show_count: true # 显示每个归档的文章总数
 
 # Fancybox
 # 图集功能
-fancybox: false
+fancybox: true
 
 # Search
 search:
