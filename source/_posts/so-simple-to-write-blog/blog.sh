@@ -98,9 +98,9 @@ gitPush(){
   fi
   echo "推送代码到git仓库"
   echo $commitMsg
-  # git add .
-  # git commit -m "$commitMsg"
-  # git push
+  git add .
+  git commit -m "$commitMsg"
+  git push
 
   pauseAnyKeyExit
 }

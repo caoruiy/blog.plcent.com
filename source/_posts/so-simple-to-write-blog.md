@@ -115,8 +115,9 @@ echo "3. 正在发布博客.."
 hexo d
 ```
 
-> 如果你想你的博客可以自动推送更新，可以参照另一篇文章：
-> 
+> 如果你想你的博客可以自动推送更新，可以参照我写的另外两篇文章：
+> [hexo搭建个人博客并部署到个人服务器](https://blog.plcent.com/2019/11/04/hello-hexo/)
+> [如果优雅的部署hexo博客到自己的服务器](https://blog.plcent.com/2019/11/08/how-to-deploy-hexo-to-self-server/)
 
 ![20200528_172321](so-simple-to-write-blog/20200528_172321.gif)
 
@@ -125,6 +126,7 @@ hexo d
 ### 推送git仓库
 
 该部分模拟了手动提交仓库的操作，需要你录入一个提交日志
+
 
 ```shell
 clear
@@ -140,6 +142,8 @@ git add .
 git commit -m "$commitMsg"
 git push
 ```
+
+![20200528_175335](so-simple-to-write-blog/20200528_175335.gif)
 
 ### 拉取仓库
 
