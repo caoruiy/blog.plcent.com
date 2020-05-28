@@ -189,7 +189,11 @@ echoError() {
 
 # 输入任意键退出
 pauseAnyKeyExit(){
-  read -p '输入任意键退出...'
+  read -p '输入任意键退出(输入0返回主菜单)...' key
+  if [[ $key = '0' ]]; then
+    # 返回主选择
+    main
+  fi
 }
 
 # 打开Typora编辑器
@@ -248,10 +252,13 @@ displayWebsite(){
   clear
   echo "发布站点"
   echo "1. 正在清除博客信息..."
+  echo "> hexo clean"
   hexo clean
   echo "2. 正在生成博客内容..."
+  echo "> hexo g"
   hexo g
   echo "3. 正在发布博客.."
+  echo "> hexo d"
   hexo d
   
   pauseAnyKeyExit
@@ -261,15 +268,18 @@ displayWebsite(){
 gitPush(){
   clear
   read -p "推送日志> " commitMsg
-  if [[ -n commitMsg ]]; then
+  if [[ -z $commitMsg ]]; then
     commitDate=`date "+%Y/%m/%d"`
     commitMsg="更新博客-$commitDate"
   fi
   echo "推送代码到git仓库"
-  echo $commitMsg
-git add .
-git commit -m "$commitMsg"
-git push
+  echo "推送日志> $commitMsg"
+  echo "> git add ."
+  git add .
+  echo "> git commit -m $commitMsg"
+  git commit -m "$commitMsg"
+  echo "> git push"
+  git push
 
   pauseAnyKeyExit
 }
@@ -326,6 +336,5 @@ main(){
 
 # 开始执行
 main
-
 ```
 
