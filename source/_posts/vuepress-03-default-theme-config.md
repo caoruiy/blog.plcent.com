@@ -6,7 +6,7 @@ date: 2020-01-20 11:28:37
 tags:
 - vuepress
 categories:
--vuepress
+- vuepress
 ---
 
 官方文档参见：[默认主题配置](https://vuepress.vuejs.org/zh/theme/default-theme-config.html#首页)

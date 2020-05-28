@@ -6,7 +6,7 @@ date: 2020-01-16 22:28:37
 tags:
 - vuepress
 categories:
--vuepress
+- vuepress
 ---
 
 ### vuepress 初识
