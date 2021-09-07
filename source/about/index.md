@@ -5,6 +5,7 @@ layout: about
 comments: false
 sidebar: custom
 ---
+
 一个刚毕业的职场新人，从事前端开发相关工作，对新事物保持着好奇，热爱工作，坚持保养头发
 
 ```json
@@ -13,7 +14,7 @@ sidebar: custom
     name: "曹一山",
     age: 27,
     gender: "男",
-    experience: "1年",
+    experience: "3年",
     address: "江苏-苏州",
     education: "硕士研究生",
     email: "caoruiy@plcent.com",
