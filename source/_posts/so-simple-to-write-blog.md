@@ -132,7 +132,7 @@ hexo d
 clear
 read -p "推送日志> " commitMsg
 # 如果你没有录入日志信息，使用当前日期作为日志推送
-if [[ -n commitMsg ]]; then
+if [[ -z commitMsg ]]; then
   commitDate=`date "+%Y/%m/%d"`
   commitMsg="更新博客-$commitDate"
 fi
