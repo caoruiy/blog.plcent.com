@@ -149,7 +149,7 @@ Commercial support is available at
 
 启动容器均会生成新的网卡信息，删除容器，网卡也会移除，也就是每次启动，IP地址都会新建
 
-![1657876653166](learn-the-abc-of-docker-about-network/1657876653166.png)
+![1657876653166](./learn-the-abc-of-docker-about-network/1657876653166.png)
 
 
 
@@ -443,7 +443,7 @@ Commercial support is available at
 docker inspect ng1
 ```
 
-![1657882812055](learn-the-abc-of-docker-about-network/1657882812055.png)
+![1657882812055](./learn-the-abc-of-docker-about-network/1657882812055.png)
 
 可以发现 ng1 上被挂载了一个新的网络my-network。就是所谓的"一个容器两个IP地址"。
 
